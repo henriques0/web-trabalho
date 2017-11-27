@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title>Games - Carrinho</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../js/jquery-3.2.1.min.js"></script>
+        <script src="../js/popper.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap.css"/>
+		<link rel="stylesheet" href="../css/open-iconic-bootstrap.min"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	.divisoria{
+background: #343a40; width: 100%; height: 30px; font-size: 18px; color: #FFF; 	-webkit-border-radius: 100% / 29%;
+	   -moz-border-radius: 100% / 29%;
+	        border-radius: 100% / 29%;
+ 
+	-webkit-box-shadow: 0px 0px 23px #666;
+	   -moz-box-shadow: 0px 0px 23px #666; 
+	        box-shadow: 0px 0px 23px #666;
+	}
+	
+	.card{
+		margin-right:20px;
+		margin-botton:20px
+	}
+	.img{
+    background-image: url('../img/pac-5.jpg');
+    text-align: center;
+	color: white;
+	font-family:Abril Fatface;
+	font-size:180%;
+}
+	</style>
+    </head>
+    <body>
+<!-- Inicio NavBar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #e3f2fd;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  		<div id="logo" style="margin-right:50px">
+			<center><a href="#"><img src="../img/logo.png" height="80px" width="80px" /></a></center>
+		</div>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Inicio<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Consoles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Games</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Acessorios</a>
+      </li>
+    </ul>
+		<div class="pesquisa" style="margin-right:40px">
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Produto" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><img src="../font/magnifying-glass.svg" type="#" title="Login" height="20px" width="20px"></img></button>
+    </form>
+	</div>
+	<div class="iten" style="margin-left:10px">
+	<a href="../paginas/carrinho.html"><i class="fa fa-2x fa-fw fa-cart-plus" style="color: #FFF;"></i></a>
+	<a href="../paginas/login.html"><i class="fa fa-2x fa-fw fa-lock" style="color: #FFF;"></i></a>
+  </div>
+</nav>
+<!-- Fim NavBar -->
+<!-- Inicio do Container da imagem -->
+<div class="img" style="padding-top:120px; padding-bottom: 80px;">
+<p>Carrinho</p>
+</div></br>
+<!-- Fim do Container imagem -->
+<!-- Meio Da Pagina -->
+<div class="divisoria"><center>Produtos - Carrinho <img src="../font/cart.svg" height="20px" width="20px"/><center></div><br />
+<div class="container">
+<table class="table table-striped ">
+  <thead>
+    <tr>
+      <th scope="col">Produto(s)</th>
+      <th scope="col">Quantidade</th>
+      <th scope="col">Entrega</th>
+      <th scope="col">Valor Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <th scope="row"><img src="../img/mario.jpg" width="100" heigth="100"/>  Super mario odyssey - Ninteno Switch</th>
+      <td>
+	  <select id="input" class="form-control">
+        <option selected>1</option>
+        <option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+      </select>
+	  </td>
+      <td>-</td>
+      <td>R$ 357,00</td>
+    </tr>
+    <tr>
+        <th scope="row"><img src="../img/switch-c.jpg" width="100" heigth="100"/>  Nintendo Switch</th>
+      <td>
+	  <select id="input" class="form-control">
+        <option selected>1</option>
+        <option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+      </select>
+	  </td>
+      <td>-</td>
+      <td>R$ 2.357,00</td>
+    </tr>
+    <tr>
+        <th scope="row"><img src="../img/joy.jpg" width="100" heigth="100"/>  Joy-Cons Nintendo Switch</th>
+      <td>
+	  <select id="input" class="form-control">
+        <option selected>1</option>
+        <option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+      </select>
+	  </td>
+      <td>-</td>
+      <td>R$ 367,00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<div class="container">
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card" >
+      <div class="card-body">
+        <h6 class="card-text">Quantidade de produto: 03</h6>
+        <h6 class="card-text">Valor Total: R$ 3.081,00 </h6>
+        <p class="card-text">Frete (?): </p>
+        <a href="#" class="btn btn-primary" style="background-color: #000">Finalizar Compra</a>
+      </div>
+    </div>
+  </div>
+  
+    <div class="card" >
+      <div class="card-body">
+        <h6 class="card-text">Simule o prazo de entrega e o frete para seu Endereço abaixo:</h6>
+		<input type="text" class="form" placeholder="Seu CEP">
+        <p class="card-text">O prazo começa a contar a partir da aprovação do pagamento. </p>
+        <a href="#" class="btn btn-primary" style="background-color: #000">Calcular</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Fim Do Meio Da Pagina -->
+<!-- Inicio Footer -->
+<footer style="margin-top:130px" >
+  <div class="container-fluid bg-dark py-3">
+    <div class="container">
+      <div class="row py-3">
+        <div class="col-md-9">
+          <a href="#"><img src="../img/logo.png" height="60px" width="60px" /></a>
+		  <span><font color="#FFF">Games - Copyright 2017</font></span>
+        </div>
+        <div class="col-md-3">
+          <div class="d-inline-block">
+            <div class="bg-circle-outline d-inline-block">
+              <a href="https://www.facebook.com/" class="text-white"><i class="fa fa-2x fa-fw fa-facebook"></i></a>
+            </div>
+            <div class="bg-circle-outline d-inline-block">
+              <a href="https://twitter.com/" class="text-white"><i class="fa fa-2x fa-fw fa-twitter"></i></a>
+            </div>
+            <div class="bg-circle-outline d-inline-block">
+              <a href="https://www.linkedin.com/company/" class="text-white"><i class="fa fa-2x fa-fw fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Fim Footer -->
+    </body>
+</html>
